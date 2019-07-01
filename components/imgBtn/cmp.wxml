@@ -1,0 +1,11 @@
+<!--components/imgBtn/cmp.wxml-->
+
+
+<button plain="{{true}}" 
+    class="container" 
+    open-type="{{openType}}"
+    bindgetuserinfo="onGetUserInfo" >
+    <!-- <image class="image" src="{{imgSrc}}" /> -->
+    <!-- 改用插槽 -->
+    <slot name="img" class="slot"></slot>
+</button>

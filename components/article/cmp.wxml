@@ -1,0 +1,50 @@
+<!--components/article/cmp.wxml-->
+<!-- 文章组件 -->
+
+
+<view class="container">
+    <view class="mark-container">
+        <image class="avatar" src="{{articleDetail.mark.avatar}}" />
+        <text class="text" >{{articleDetail.mark.people}}</text>
+        <text class="text" >等</text>
+        <text class="text" >{{articleDetail.mark.count}}</text>
+        <text class="text" >人mark了</text>
+    </view>
+    <view>
+        <edu-bigImg wx:if="{{articleDetail.type === 0}}" 
+                    img-src="{{articleDetail.imgArray[0]}}"
+                    main-title="{{articleDetail.mainTitle}}" />
+
+        <edu-nineImg wx:elif="{{articleDetail.type === 1}}" 
+                     img-arr="{{articleDetail.imgArray}}"
+                     main-title="{{articleDetail.mainTitle}}" />
+
+        <edu-imgText wx:elif="{{articleDetail.type === 2}}" 
+                     main-title="{{articleDetail.mainTitle}}"
+                     sub-head="{{articleDetail.subHead}}"
+                     img-src="{{articleDetail.imgArray[0]}}"/>
+
+        <edu-video wx:elif="{{articleDetail.type === 3}}" 
+                   main-title="{{articleDetail.mainTitle}}"
+                   src="{{articleDetail.video.src}}"
+                   duration="{{articleDetail.video.duration}}"
+                   poster="{{articleDetail.video.poster}}"
+                   video-id="{{articleDetail.video.id}}"/>
+
+        <edu-pureText wx:else 
+                      main-title="{{articleDetail.mainTitle}}"
+                      sub-head="{{articleDetail.subHead}}" />
+    </view>
+    <view class="control-container">
+        <view>
+            <edu-tag tag="{{articleDetail.tag}}" tag-id="{{articleDetail.tagId}}"/>
+        </view>
+        <view class="control-box">
+            <edu-more class="box" tag="{{articleDetail.tag}}" />
+            <edu-imgBtn class="box img-btn" open-type="share">
+                <image class="relay" slot="img" src="/images/mark/relay.jpg"></image>
+            </edu-imgBtn>
+            <edu-like class="box" bind:like="onLike" like="{{likeStatus}}" />
+        </view>
+    </view>
+</view>

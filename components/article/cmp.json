@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "edu-bigImg": "/components/bigImg/cmp",
+    "edu-pureText": "/components/pureText/cmp",
+    "edu-imgText": "/components/imgText/cmp",
+    "edu-nineImg": "/components/nineImg/cmp",
+    "edu-video": "/components/video/cmp",
+    "edu-like": "/components/like/cmp",
+    "edu-more": "/components/more/cmp",
+    "edu-tag": "/components/tag/cmp",
+    "edu-imgBtn": "/components/imgBtn/cmp"
+  }
+}

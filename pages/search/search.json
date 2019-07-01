@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "edu-search": "/components/search/cmp",
+    "edu-articleList": "/components/articleList/cmp"
+  }
+}

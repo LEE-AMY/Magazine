@@ -1,0 +1,8 @@
+<!--components/tag/cmp.wxml-->
+
+<!-- tag组件 -->
+
+<view class="container"
+    catch:tap="onTap"
+    data-tagId="{{tagId}}"
+>{{tag}}</view>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "edu-subscribe": "/components/subscribe/cmp",
+    "edu-tagList": "/components/tagList/cmp",
+    "edu-add": "/components/add/cmp",
+    "edu-search": "/components/search/cmp"
+  }
+}

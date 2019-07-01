@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+
+ 
+
+<view class="container">
+    <edu-search value="{{searchWord}}" />
+
+    <view>
+        <view># {{tag}}</view>
+        <view>
+            <view></view>
+        </view>
+    </view>
+
+    <edu-articleList article-list="{{articleList}}" />
+</view>

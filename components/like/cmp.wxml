@@ -1,0 +1,9 @@
+<!--components/like/cmp.wxml-->
+
+<!-- 订阅组件 -->
+
+
+<view class="container" catch:tap="onLikeTap">
+    <text hidden="{{!like}}" class="like"></text>
+    <text hidden="{{like}}" class="unlike"></text>
+</view>

@@ -1,0 +1,51 @@
+/* pages/mark/mark.wxss */
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30rpx;
+    background-color: #fff;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50rpx;
+}
+
+.user-name {
+    font-size: 40rpx;
+}
+
+.user-avatar,.get-user-info {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+}
+
+.share {
+    width: 50rpx;
+    height: 50rpx;
+    margin: 30rpx 0;
+    /* font-size: 50rpx;
+    font-weight: 600;
+    line-height: 50rpx;
+    text-align: center; */
+}
+
+.relay {
+    width: 100%;
+    height: 100%;
+}
+
+.get-user-info {
+    display: block;
+    padding: 0;
+    border: 0;
+}

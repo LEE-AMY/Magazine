@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "edu-article": "/components/article/cmp",
+    "edu-loading": "/components/loading/cmp"
+  }
+}

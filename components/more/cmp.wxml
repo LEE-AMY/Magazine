@@ -1,0 +1,8 @@
+<!--components/more/cmp.wxml-->
+
+<!-- 更多组件 -->
+
+
+<view class="container" catch:tap="onTap">
+    <text>···</text>
+</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "edu-articleList": "/components/articleList/cmp",
+    "edu-nav": "/components/nav/cmp",
+    "edu-recommend": "/components/recommend/cmp",
+    "edu-tagList": "/components/tagList/cmp",
+    "edu-add": "/components/add/cmp",
+    "edu-loading": "/components/loading/cmp"
+  },
+  "navigationBarTitleText": "渡河杂志"
+}

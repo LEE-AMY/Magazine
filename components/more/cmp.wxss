@@ -1,0 +1,11 @@
+/* components/more/cmp.wxss */
+
+.container {
+    width: 50rpx;
+    height: 50rpx;
+    font-size: 45rpx;
+    /* border: 1px solid #000; */
+    text-align: center;
+    line-height: 50rpx;
+    font-weight: 600;
+}

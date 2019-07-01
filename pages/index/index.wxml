@@ -1,0 +1,63 @@
+<!--pages/index/index.wxml-->
+
+
+<!-- <edu-bigImg imgSrc="http://pic.90sjimg.com/back_pic/qk/back_origin_pic/00/01/53/a4538d4b712d11fb7890fd99416973dc.jpg" 
+            mainTitle="三大矿山更是公开赛夺冠萨的感觉的反馈给"    
+/> -->
+
+<!-- <edu-pureText mainTitle="司空见惯看好德国舍得离开公司考虑时看到两个是打开谷歌" 
+              subHead="北上广深不相信眼泪"
+/> -->
+
+<!-- <edu-imgText mainTitle="时代的可根据山豆根山豆根"
+             subHead="数量共计三个"
+             imgSrc="http://pic1.win4000.com/wallpaper/3/5423b8a480e35.jpg"
+/> -->
+
+<!-- <edu-nineImg imgSrc="" 
+             mainTitle="酒不醉人人自醉-nineImg"
+/> -->
+
+
+<!-- <edu-video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
+           poster="https://upfile2.asqql.com/upfile/2009pasdfasdfic2009s305985-ts/gif_spic/2016-6/201662722361134344.gif"
+           duration="40'"
+           mainTitle="酒不醉人人自醉"
+           videoId="vd-2019"
+/> -->
+
+<!-- <edu-tag tag="心理" tagId="tag2019" />
+
+<edu-more tag="心理" />
+
+<edu-like like="{{false}}" /> -->
+
+<!-- <edu-article type="{{0}}" /> -->
+
+<!-- <edu-article wx:for="{{articleList}}"
+    article-detail="{{item}}" 
+    wx:key="{{artId}}"
+    /> -->
+
+
+<!-- 导航 -->
+<edu-nav  class="nav" catch:nav="onNav" />
+
+<!-- 推荐 -->
+<edu-recommend recommend="{{recommend}}" magazineId="{{magazineId}}" class="recommend" />
+
+<!-- 标签 -->
+<edu-tagList mark-list="{{markList}}" > 
+    <edu-add slot="before" class="add" wx:if="{{magazineId == 0}}" />
+    <view slot="after" class="to-catalog" catch:tap="onCatalog" wx:if="{{magazineId == 0}}">•••</view>
+</edu-tagList>
+
+<!-- 文章列表 -->
+<edu-articleList articleList="{{articleList}}"
+    more="{{getMore}}" 
+    magazineId="{{magazineId}}" />
+
+<!-- 加载动画 -->
+<view class="loading-container" wx:if="{{loading}}" >
+    <edu-loading class="loading"  />
+</view>

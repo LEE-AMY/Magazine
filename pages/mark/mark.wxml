@@ -1,0 +1,45 @@
+<!--pages/mark/mark.wxml-->
+
+<view class="container">
+
+    <view class="user-container">
+        <view class="user-info">
+            <view class="user-name">{{userInfo.nickName}}</view>
+            <view class="user-avatar">
+                <image wx:if="{{authorized}}" class="avatar" src="{{userInfo.avatarUrl}}" />
+                <!-- <button wx:else="{{!authorized}}" class="get-user-info" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" > 
+                    <image class="avatar" src="/images/mark/login.jpg" />
+                </button> -->
+
+                <!-- <edu-imgBtn open-type="getUserInfo" img-src="/images/mark/login.jpg"  /> -->
+                <edu-imgBtn open-type="getUserInfo"
+                    bind:mygetuserinfo="onGetUserInfo"
+                    wx:else>
+                    <image class="avatar" src="/images/mark/login.jpg" slot="img" />
+                </edu-imgBtn>
+            </view>
+            <!-- <open-data type="userNickName" class="user-name" />
+            <open-data type="userAvatarUrl" class="user-avatar" /> -->
+
+            
+
+        </view>
+        <!-- <view class="share">
+            <text>↗</text>
+        </view> -->
+
+        <!-- <view class="share">
+            <edu-imgBtn img-src="/images/mark/relay.jpg" />
+        </view> -->
+        <!-- 改用插槽方式 -->
+
+        <view class="share">
+            <edu-imgBtn open-type="share">
+                <image class="relay" slot="img" src="/images/mark/relay.jpg"></image>
+            </edu-imgBtn>
+        </view>
+    </view>
+
+    <edu-articleList article-list="{{likeList}}" />
+
+</view>
