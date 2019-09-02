@@ -1,2 +1,2 @@
-# magazine
+# Magazine
 about WeChat applet
